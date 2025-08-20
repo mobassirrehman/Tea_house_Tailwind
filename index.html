@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tea House</title>
+    <link rel="stylesheet" href="./styles/style.css">
     <!-- Tailwind cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awesome cdn -->
@@ -15,13 +16,13 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body class="manrope_font">
     <!-- banner section  -->
     <div
       class="parent_div flex flex-col md:flex-row justify-between items-center min-h-[200px] max-w-[1250px] mx-auto"
     >
       <div class="left_div">
-        <h1 class="text-[80px]">
+        <h1 class="text-[70px]">
           It's good <br />
           tea time at The <br />
           Tea House
@@ -126,7 +127,7 @@
         <h1 class="text-3xl md:text-5xl font-extrabold mb-5 leading-tight">
           Great Tea, Freshly <br />Presented
         </h1>
-        <p class="text-gray-600 mb-7 leading-relaxed text-sm md:text-base">
+        <p class="mb-7 leading-relaxed text-sm md:text-base">
           The meaning of gong cha is chanese is to provide the best tea to
           emperor <br />
           from all possessions . It represents the highest quality and self
@@ -143,7 +144,7 @@
           <br />luxurious and minimalist impression
         </p>
         <h3 class="text-lg md:text-xl font-bold my-4">Premium Quality</h3>
-        <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+        <p class="leading-relaxed text-sm md:text-base">
           Premium Quality that makes tea more elegant and more <br />durable
           when you use it.
         </p>
@@ -154,7 +155,7 @@
       class="parent_div max-w-[1250px] mx-auto mt-[100px] min-h-[700px] md:h-[600px] flex flex-col md:flex-row gap-4 p-5 bg-gradient-to-r from-[#FF8938] to-[#ff0000] rounded-sm"
     >
       <!-- Left div - Content -->
-      <div class="left_div w-full md:w-1/2 text-white flex justify-center items-center">
+      <div class="left_div w-full md:w-1/2 text-white flex justify-center items-center bg-[url(./images/bg_cup.png)] bg-no-repeat bg-bottom">
         <div class="text-center md:text-left">
           <h1 class="text-2xl md:text-4xl font-bold mb-5">Meet Our Super <br>Clients</h1>
           <p class="text-sm my-5">
@@ -219,10 +220,52 @@
       </div>
     </div>
     <!-- footer section  -->
-     <div class="footer_section border-2 border-red-300 mt-[100px] h-[500px] p-5">
-      <div class="border-2 border-green-300 h-[100px]">
-        <img src="./images/bg_cup.png" alt="">
+    <div class="footer_parent bg-gradient-to-r from-[#ff89381a] to-[#ff00001a]">
+      <div class="footer_section mt-[120px] max-w-[1250px] mx-auto p-5 pb-10">
+        <div class="mt-10 flex justify-between items-center">
+          <img src="./images/cup.png" alt="">
+          <div class="flex items-center">
+            <p class="mr-8">Ready to get started?</p>
+            <button class="w-[150px] h-[50px] text-white rounded-lg bg-gradient-to-r from-[#ff8938] to-[#ff0000]">Get Started</button>
+          </div>
+        </div>
+        
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h1 class="text-2xl my-5">Quick Links</h1>
+            <p class="mb-3">Home</p>
+            <p class="mb-3">About Us</p>
+            <p class="mb-3">Insurance</p>
+            <p class="mb-3">Privacy Policy</p>
+          </div>
+          <div>
+            <h2 class="text-2xl my-5">Our Service</h2>
+            <p class="mb-3">Life Insurance</p>
+            <p class="mb-3">Car Insurance</p>
+            <p class="mb-3">Health Insurance</p>
+            <p class="mb-3">House Insurance</p>
+          </div>
+          <div>
+            <h3 class="text-2xl my-5">Help</h3>
+            <p class="mb-3">FAQs</p>
+            <p class="mb-3">Contact Us</p>
+          </div>
+          <div>
+            <h4 class="text-2xl my-5">Subscribe to our <br>newsletter</h4>
+            <input type="text" placeholder="Email address" class="border-b-1 my-6 pb-2">
+            <button class="h-[30px] w-[30px] rounded-full bg-gradient-to-r from-[#ff8938] to-[#ff0000] text-white">></button>
+            <div class="mt-4 space-x-3">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-8 pt-4 flex justify-center">
+          <p class="text-center">© 2027 UIDesign.to - All rights reserved.</p>
+        </div>
       </div>
-     </div>
+    </div>
   </body>
 </html>
